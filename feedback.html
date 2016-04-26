@@ -23,7 +23,49 @@
             </ul>
         </nav>
         <section>
-        
+            <h2>Sag uns deine Meinung!</h2>
+            <form>
+            <!-- VORSICHT! MUSS KOMPLETT ÜBERARBEITET WERDEN! -->
+            <!-- Name, Geburtsdatum, Email, Auswahl: Wie gut?, Text: Was noch?-->
+                <fieldset>
+                    <legend>Vor- und Nachname</legend>
+                    <label for="name">Vorname, Nachname</label>
+                    <input type="text" name="name">
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Geburtsdatum</legend>
+                    <label id="geburtsdatum">TT.MM.JJJJ</label>
+                    <input type="date" name="geburtsdatum">
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Email-Adresse</legend>
+                    <label id="email">name@beispiel.de</label>
+                    <input type="email" name="email">
+                </fieldset>
+                
+                <fieldset>
+                    <legend id="bewertung">Wie gut gefällt dir unsere Webseite?</legend>
+                    
+                    <label for="bewertung">Sehr gut</label> 
+                    <input type="radio" name="bewertung">
+                    
+                    <label for="bewertung">Okay</label> 
+                    <input type="radio" name="bewertung">
+                
+                    <label for="bewertung">Nicht so gut</label> 
+                    <input type="radio" name="bewertung">
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Hast du Verbesserungsvorschläge?</legend>
+                    <label id="vorschlaege">Deine Vorschläge</label>
+                    <textarea name="vorschlaege"></textarea>
+                </fieldset>
+                
+                <input type="submit" value="Absenden" />
+            </form>
         </section>
         <footer>
             <h3>Bildquellen</h3>
