@@ -25,47 +25,53 @@
         <section>
             <h2>Sag uns deine Meinung!</h2>
             <form>
-            <!-- VORSICHT! MUSS KOMPLETT ÜBERARBEITET WERDEN! -->
-            <!-- Name, Geburtsdatum, Email, Auswahl: Wie gut?, Text: Was noch?-->
                 <fieldset>
-                    <legend>Vor- und Nachname</legend>
-                    <label for="name">Vorname, Nachname</label>
-                    <input type="text" name="name">
-                </fieldset>
-                
-                <fieldset>
-                    <legend>Geburtsdatum</legend>
-                    <label id="geburtsdatum">TT.MM.JJJJ</label>
-                    <input type="date" name="geburtsdatum">
-                </fieldset>
-                
-                <fieldset>
-                    <legend>Email-Adresse</legend>
-                    <label id="email">name@beispiel.de</label>
-                    <input type="email" name="email">
-                </fieldset>
-                
-                <fieldset>
-                    <legend id="bewertung">Wie gut gefällt dir unsere Webseite?</legend>
+                    <legend>Persönliche Daten</legend>
                     
+                    <label for="vorname">Vorname</label>
+                    <input type="text" name="vorname" placeholder="Max">
+                    
+                    <label for="nachname">Nachname</label>
+                    <input type="text" name="nachname" placeholder="Mustermann">
+                    
+                    <br />
+                    <label for="geburtsdatum">Geburtsdatum</label>
+                    <input type="date" name="geburtsdatum" placeholder="TT.MM.JJJJ">
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Kontakt</legend>
+                    
+                    <label for="email">Email-Adresse</label>
+                    <input type="email" name="email" placeholder="name@beispiel.de">
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Wie gefällt dir unsere Webseite?</legend>
+
                     <label for="bewertung">Sehr gut</label> 
-                    <input type="radio" name="bewertung">
+                    <input type="radio" name="bewertung" value="1">
                     
+                    <br />
                     <label for="bewertung">Okay</label> 
-                    <input type="radio" name="bewertung">
-                
+                    <input type="radio" name="bewertung" value="0">
+                    
+                    <br />
                     <label for="bewertung">Nicht so gut</label> 
-                    <input type="radio" name="bewertung">
-                </fieldset>
+                    <input type="radio" name="bewertung" value="-1">
                 
-                <fieldset>
-                    <legend>Hast du Verbesserungsvorschläge?</legend>
-                    <label id="vorschlaege">Deine Vorschläge</label>
-                    <textarea name="vorschlaege"></textarea>
+                    <br />
+                    
+                    <label for="vorschlaege">Verbesserungsvorschläge</label>
+                    <textarea name="vorschlaege" placeholder="..."></textarea>
                 </fieldset>
                 
                 <input type="submit" value="Absenden" />
             </form>
+        </section>
+        <section>
+            <h2>Datenschutz</h2>
+            <p>Wir geben deine Daten nicht an dritte weiter und interessieren uns lediglich für das, was du unter "Wie gefällt dir unsere Webseite?" schreibst. Jegliche andere Daten, also deinen Namen, dein Geburtsdatum und deine Email-Adresse, werden nur als Teil der Gruppenarbeit für den Kurs <abbr>GWP</abbr> an der Hochschule HTW zur Übung der Verwendung von Formularen abgefragt.</p>
         </section>
         <footer>
             <h3>Bildquellen</h3>
