@@ -15,14 +15,29 @@
         <nav>
         Menü
             <ul>
-                <li><a href="index.html" alt="Home">Home</a></li>
-                <li><a href="autoren.html" alt="Autoren">Autoren</a></li>
-                <li><a href="feedback.html" alt="Feedback">Feedback</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="autoren.html">Autoren</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
             </ul>
         </nav>
         <section>
             <h2>Nützliche Weblinks zum Thema Webprogrammierung</h2>
-            <table border="0">
+            
+            <nav>
+                Inhaltsverzeichnis der Tabelle
+                <ol>
+                    <li><a href="#css">CSS</a></li>
+                    <li><a href="#html">HTML</a></li>
+                    <li><a href="#semantik">Semantisch korrektes HTML</a></li>
+                    <li><a href="#validierung">Validierung</a></li>
+                    <li><a href="#webstandards">Webstandards</a></li>
+                    <li><a href="#accessibility">Accessibility</a></li>
+                    <li><a href="#usability">Usability</a></li>
+                    <li><a href="#xml">XML</a></li>
+                </ol>
+            </nav>
+            
+            <table>
                 <thead>
                     <tr>
                         <th>Schlagwort</th>
@@ -31,52 +46,52 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <tr id="css">
                         <td>CSS</td>
-                        <td><a href="http://www.css4you.de/" alt="CSS 4 you" title="CSS3 Referenz mit ergänzenden Ressourcen" target="_blank">css4you.de</a></td>
-                        <td></td>
+                        <td><a href="http://www.css4you.de/" title="CSS3-Referenz mit ergänzenden Ressourcen" target="_blank">CSS 4 you</a></td>
+                        <td>Eine aktuelle <em>CSS3-Referenz</em> mit <em>ergänzenden Ressourcen</em>, wie zum Beispiel einem Tutorial für Einsteiger, einer Übersicht zur Browserkompatibilität verschiedener CSS-Befehle und verschiedenen Tipps-und-Tricks-Seiten für schöneres CSS.</td>
                     </tr>
                     
-                    <tr>
+                    <tr id="html">
                         <td>HTML</td>
-                        <td><a href="http://html5doctor.com" alt="HTML5 Doctor" title="HTML5 Kurzreferenz und weiterführende Artikel" target="_blank">html5doctor.com</a></td>
-                        <td></td>
+                        <td><a href="http://html5doctor.com/resources/" title="HTML5 Kurzreferenz und weiterführende Resourcen" target="_blank">HTML5 Doctor</a></td>
+                        <td>Eine aktuelle <em>HTML5-Kurzreferenz</em> mit kleinen Abstracts zu verschiedenen HTML5-Elementen. Von dort aus wird immer zur erweiterten Beschreibung auf w3.org verlinkt, sodass bei Bedarf detaillierte Informationen eingeholt werden können. Außerdem ist immer ein <em>Beispielcode</em> vorhanden. Zusätzlich gibt es <em>weitere hilfreiche Ressourcen</em>, wie zum Beispiel Artikel zu Semantik oder Formularen.</td>
                     </tr>
                     
-                    <tr>
+                    <tr id="semantik">
                         <td>Semantisch korrektes HTML</td>
-                        <td><a href="http://www.w3schools.com/html/html5_semantic_elements.asp" alt="w3schools" title="Einführung in die Semantik, mit weiterführenden Links" target="_blank">w3schools.com/html/html5_semantic_elements.asp</a></td>
-                        <td></td>
+                        <td><a href="http://www.w3schools.com/html/html5_semantic_elements.asp" title="Einführung in die Semantik, mit weiterführenden Links" target="_blank">w3schools: HTML5 Semantic Elements</a></td>
+                        <td>Gibt eine kurze Übersicht über den Begriff der <em>Semantik</em> in HTML5. Zur Vertiefung können Artikel auf HTML5 Doctor (siehe oben) gelesen werden.</td>
                     </tr>
                     
-                    <tr>
+                    <tr id="validierung">
                         <td>Validierung</td>
-                        <td><a href="http://validator.w3.org" alt="Validator" title="Überprüfung der Validität eines Dokumentes" target="_blank">validator.w3.org</a></td>
-                        <td></td>
+                        <td><a href="http://validator.w3.org" title="Überprüfung der Validität eines Dokumentes" target="_blank">Validator</a></td>
+                        <td>Hier kann die <em>Validität</em> von HTML5-Dokumenten überprüft werden. Es werden nicht nur Syntax-Fehler gefunden, sondern in vielen Fällen auch ob ein Element an der richtigen Stelle verwendet wird. Der Code kann über die Angabe einer <abbr title="englisch für einheitlicher Bezeichner für Ressourcen, Quelle:Wikipedia">URI</abbr>, das Hochladen einer Datei, oder das Pasten des Quellcodes überprüft werden.</td>
                     </tr>
                     
-                    <tr>
+                    <tr id="webstandards">
                         <td>Webstandard</td>
-                        <td><a href="http://caniuse.com" alt="Can I Use" title="Überprüfung der Ünterstützung durch Browser" target="_blank">caniuse.com</a></td>
-                        <td></td>
+                        <td><a href="http://caniuse.com" title="Überprüfung der Ünterstützung durch Browser" target="_blank">Can I Use</a></td>
+                        <td>Hier kann überprüft werden, ob ein bestimmtes HTML5-Element oder auch ein CSS- oder JavaScript-Befehl, noch aktuell ist, oder ob von der Verwendung abgeraten wird, da er nicht mehr den <em>Webstandards</em> entspricht.</td>
                     </tr>
                     
-                    <tr>
+                    <tr id="accessibility">
                         <td>Accessibility</td>
-                        <td><a href="https://www.w3.org/standards/webdesign/accessibility" alt="W3 Accessibility" title="Einführung in die Accessibility, mit weiterführenden Links zur praktischen Anleitung" target="_blank">w3.org/standards/webdesign/accessibility</a></td>
-                        <td></td>
+                        <td><a href="https://www.w3.org/standards/webdesign/accessibility" title="Einführung in die Accessibility, mit weiterführenden Links zur praktischen Anleitung" target="_blank">w3: Accessibility</a></td>
+                        <td>Gibt eine Übersicht über das <em>Was, Warum und Wie der Accessibility</em>. Zusätzlich wird auf <em>weitere Ressourcen</em> zum Nachlesen von Details und zum umfassenden Einarbeiten in die Materie verlinkt.</td>
                     </tr>
                     
-                    <tr>
+                    <tr id="usability">
                         <td>Usability</td>
-                        <td><a href="https://www.nngroup.com/articles/usability-101-introduction-to-usability/" alt="NNGroup Usability 101: Introduction to Usability" title="Einführung in die Usability" target="_blank">nngroup.com/articles/usability-101-introduction-to-usability/</a></td>
-                        <td></td>
+                        <td><a href="https://www.nngroup.com/articles/usability-101-introduction-to-usability/" title="Einführung in die Usability" target="_blank">NNGroup Usability 101: Introduction to Usability</a></td>
+                        <td>Gibt eine Einführung in das Thema der <em>Usability</em>. Es wird beschrieben was Usability ist und wofür sie wichtig ist. Außerdem gibt es Links zu <em>hilfreichen Ressourcen</em>, mit deren Hilfe man konkret lernen kann, die Usability seiner Webseite zu verbessern.</td>
                     </tr>
                     
-                    <tr>
+                    <tr id="xml">
                         <td>XML</td>
-                        <td><a href="https://www.w3.org/TR/xml/" alt="W3 XML" title="Beschreibung von XML, mit weiterführenden Links" target="_blank">w3.org/TR/xml/</a></td>
-                        <td></td>
+                        <td><a href="http://www.w3schools.com/xml/xml_whatis.asp" title="Beschreibung von XML, mit weiterführenden Links" target="_blank">w3schools: XML</a></td>
+                        <td>Beschreibt die Grundlagen von <em>XML</em> und enthält auch eine <em>XML-Referenz</em></td>
                     </tr>
                 </tbody>
             </table>
@@ -84,7 +99,7 @@
         <footer>
             <h3>Bildquellen</h3>
             <ul>
-                <li><a href="https://www.iconfinder.com/icons/383111/list_icon" alt="Iconfinder">List Icon</a> von <a href="https://www.iconfinder.com/DesignRevision" alt="Design Revision">Design Revision</a></li>
+                <li><a href="https://www.iconfinder.com/icons/383111/list_icon" target="_blank">List Icon</a> von <a href="https://www.iconfinder.com/DesignRevision" target="_blank">Design Revision</a></li>
             </ul>
         </footer>
     </body>

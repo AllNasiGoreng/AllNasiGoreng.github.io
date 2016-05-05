@@ -15,11 +15,11 @@
         <nav>
         Menü
             <ul>
-                <li><a href="index.html" alt="Home">Home</a></li>
-                <li><a href="geschichte.html" alt="Geschichte">Geschichte</a></li>
-                <li><a href="rezept.html" alt="Rezepte">Rezept</a></li>
-                <li><a href="autoren.html" alt="Autoren">Autoren</a></li>
-                <li><a href="feedback.html" alt="Feedback">Feedback</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="geschichte.html">Geschichte</a></li>
+                <li><a href="rezept.html">Rezept</a></li>
+                <li><a href="autoren.html">Autoren</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
             </ul>
         </nav>
         <section>
@@ -29,41 +29,41 @@
                     <legend>Persönliche Daten</legend>
                     
                     <label for="vorname">Vorname</label>
-                    <input type="text" name="vorname" placeholder="Max">
+                    <input type="text" id="vorname" placeholder="Max" autocomplete="on" autofocus required />
                     
                     <label for="nachname">Nachname</label>
-                    <input type="text" name="nachname" placeholder="Mustermann">
+                    <input type="text" id="nachname" placeholder="Mustermann" autocomplete="on" required />
                     
                     <br />
                     <label for="geburtsdatum">Geburtsdatum</label>
-                    <input type="date" name="geburtsdatum" placeholder="TT.MM.JJJJ">
+                    <input type="date" id="geburtsdatum" value="1998-01-31" required />
                 </fieldset>
                 
                 <fieldset>
                     <legend>Kontakt</legend>
                     
                     <label for="email">Email-Adresse</label>
-                    <input type="email" name="email" placeholder="name@beispiel.de">
+                    <input type="email" id="email" placeholder="name@beispiel.de" autocomplete="on" required />
                 </fieldset>
                 
                 <fieldset>
                     <legend>Wie gefällt dir unsere Webseite?</legend>
 
-                    <label for="bewertung">Sehr gut</label> 
-                    <input type="radio" name="bewertung" value="1">
+                    <label for="sehrgut">Sehr gut</label> 
+                    <input type="radio" name="bewertung" id="sehrgut" value="1" checked />
                     
                     <br />
-                    <label for="bewertung">Okay</label> 
-                    <input type="radio" name="bewertung" value="0">
+                    <label for="okay">Okay</label> 
+                    <input type="radio" name="bewertung" id="okay" value="0" />
                     
                     <br />
-                    <label for="bewertung">Nicht so gut</label> 
-                    <input type="radio" name="bewertung" value="-1">
+                    <label for="nichtgut">Nicht so gut</label> 
+                    <input type="radio" name="bewertung" id="nichtgut" value="-1" />
                 
                     <br />
                     
                     <label for="vorschlaege">Verbesserungsvorschläge</label>
-                    <textarea name="vorschlaege" placeholder="..."></textarea>
+                    <textarea id="vorschlaege" placeholder="..."></textarea>
                 </fieldset>
                 
                 <input type="submit" value="Absenden" />
@@ -76,7 +76,7 @@
         <footer>
             <h3>Bildquellen</h3>
             <ul>
-                <li><a href="https://www.iconfinder.com/icons/383157/comments_icon" alt="Iconfinder">Comments Icon</a> von <a href="https://www.iconfinder.com/DesignRevision" alt="Design Revision">Design Revision</a></li>
+                <li><a href="https://www.iconfinder.com/icons/383157/comments_icon" target="_blank">Comments Icon</a> von <a href="https://www.iconfinder.com/DesignRevision" target="_blank">Design Revision</a></li>
             </ul>
         </footer>
     </body>
