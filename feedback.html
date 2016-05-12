@@ -5,79 +5,76 @@
         <meta name="author" content="Alvin Soejoedi (545016) und Linda Fernsel (555949)" />   
         <meta name="description" content="Geschichte und Rezept für das leckere und weltbekannte indonesische Gericht, Nasi Goreng." />
         <title>Nasi Goreng</title>
+        
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href='https://fonts.googleapis.com/css?family=Roboto:300,300italic,500,700' rel='stylesheet' type='text/css'>
     </head>
     <body>
-        <header>
-            <h1>Nasi Goreng</h1>
-            <h2>Feedback</h2>
-            <img src="images/feedback.svg" alt="Feedback Symbol" />
-        </header>
-        <nav>
-        Menü
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="geschichte.html">Geschichte</a></li>
-                <li><a href="rezept.html">Rezept</a></li>
-                <li><a href="autoren.html">Autoren</a></li>
-                <li><a href="feedback.html">Feedback</a></li>
-            </ul>
-        </nav>
-        <section>
-            <h2>Sag uns deine Meinung!</h2>
-            <form>
-                <fieldset>
-                    <legend>Persönliche Daten</legend>
-                    
-                    <label for="vorname">Vorname</label>
-                    <input type="text" id="vorname" placeholder="Max" autocomplete="on" autofocus required />
-                    
-                    <label for="nachname">Nachname</label>
-                    <input type="text" id="nachname" placeholder="Mustermann" autocomplete="on" required />
-                    
-                    <br />
-                    <label for="geburtsdatum">Geburtsdatum</label>
-                    <input type="date" id="geburtsdatum" value="1998-01-31" required />
-                </fieldset>
-                
-                <fieldset>
-                    <legend>Kontakt</legend>
-                    
-                    <label for="email">Email-Adresse</label>
-                    <input type="email" id="email" placeholder="name@beispiel.de" autocomplete="on" required />
-                </fieldset>
-                
-                <fieldset>
-                    <legend>Wie gefällt dir unsere Webseite?</legend>
+            <header>
+                <img src="images/feedback.png" alt="Feedback Symbol"/>
+                <h1>Nasi Goreng</h1>
+                <h2>Feedback</h2>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="geschichte.html">Geschichte</a></li>
+                    <li><a href="rezept.html">Rezept</a></li>
+                    <li><a href="autoren.html">Autoren</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </nav>
+            <section>
+                <h2>Sag uns deine Meinung!</h2>
+                <form>
+                    <fieldset>
+                        <legend>Persönliche Daten</legend>
 
-                    <label for="sehrgut">Sehr gut</label> 
-                    <input type="radio" name="bewertung" id="sehrgut" value="1" checked />
-                    
-                    <br />
-                    <label for="okay">Okay</label> 
-                    <input type="radio" name="bewertung" id="okay" value="0" />
-                    
-                    <br />
-                    <label for="nichtgut">Nicht so gut</label> 
-                    <input type="radio" name="bewertung" id="nichtgut" value="-1" />
-                
-                    <br />
-                    
-                    <label for="vorschlaege">Verbesserungsvorschläge</label>
-                    <textarea id="vorschlaege" placeholder="..."></textarea>
-                </fieldset>
-                
-                <input type="submit" value="Absenden" />
-            </form>
-        </section>
-        <section>
-            <h2>Datenschutz</h2>
-            <p>Wir geben deine Daten nicht an Dritte weiter und interessieren uns lediglich für das, was du unter "Wie gefällt dir unsere Webseite?" schreibst. Jegliche andere Daten, also deinen Namen, dein Geburtsdatum und deine Email-Adresse, werden nur als Teil der Gruppenarbeit für den Kurs <abbr title="Grundlagen Webprogrammierung">GWP</abbr> an der <abbr title="Hochschule für Technik und Wirtschaft, Berlin">HTW</abbr> zur Übung der Verwendung von Formularen abgefragt.</p>
-        </section>
-        <footer>
-            <h3>Bildquellen</h3>
-            <ul>
-                <li><a href="https://www.iconfinder.com/icons/383157/comments_icon" target="_blank">Comments Icon</a> von <a href="https://www.iconfinder.com/DesignRevision" target="_blank">Design Revision</a></li>
-            </ul>
-        </footer>
+                        <label for="vorname">Vorname</label>
+                        <input type="text" id="vorname" placeholder="Max" autocomplete="on" autofocus required />
+
+                        <label for="nachname">Nachname</label>
+                        <input type="text" id="nachname" placeholder="Mustermann" autocomplete="on" required />
+
+                        <label for="geburtsdatum">Geburtsdatum</label>
+                        <input type="date" id="geburtsdatum" value="1998-01-31" required />
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Kontakt</legend>
+
+                        <label for="email">Email-Adresse</label>
+                        <input type="email" id="email" placeholder="name@beispiel.de" autocomplete="on" required />
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Wie gefällt dir unsere Webseite?</legend>
+
+                        <label for="sehrgut">Sehr gut</label> 
+                        <input type="radio" name="bewertung" id="sehrgut" value="1" checked />
+
+                        <label for="okay">Okay</label> 
+                        <input type="radio" name="bewertung" id="okay" value="0" />
+
+                        <label for="nichtgut">Nicht so gut</label> 
+                        <input type="radio" name="bewertung" id="nichtgut" value="-1" />
+
+                        <label for="vorschlaege">Verbesserungsvorschläge</label>
+                        <textarea id="vorschlaege" placeholder="..."></textarea>
+                    </fieldset>
+
+                    <input type="submit" value="Absenden" />
+                </form>
+            </section>
+            <section>
+                <h2>Datenschutz</h2>
+                <p>Wir geben deine Daten nicht an Dritte weiter und interessieren uns lediglich für das, was du unter "Wie gefällt dir unsere Webseite?" schreibst. Jegliche andere Daten, also deinen Namen, dein Geburtsdatum und deine Email-Adresse, werden nur als Teil der Gruppenarbeit für den Kurs <abbr title="Grundlagen Webprogrammierung">GWP</abbr> an der <abbr title="Hochschule für Technik und Wirtschaft, Berlin">HTW</abbr> zur Übung der Verwendung von Formularen abgefragt.</p>
+            </section>
+            <footer>
+                <h3>Bildquellen</h3>
+                <ul>
+                    <li><a href="https://www.iconfinder.com/icons/383157/comments_icon" target="_blank">Comments Icon</a> von <a href="https://www.iconfinder.com/DesignRevision" target="_blank">Design Revision</a></li>
+                </ul>
+            </footer>
     </body>
 </html>
