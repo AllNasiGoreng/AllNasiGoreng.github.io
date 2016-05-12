@@ -1,7 +1,11 @@
 /* Elemente */
 a {
     text-decoration: none;
-    color:#D17B3F;
+    color: #cc0000;
+}
+
+a:hover{
+    color: #990000;
 }
 
 /* NÖTIG??*/
@@ -42,7 +46,12 @@ header > img {
 }
 
 nav > ul > li {
-    display: inline;
+    display: inline-block;
+    padding: 0 20px 0 20px;
+}
+
+nav {
+    text-align: center;
 }
 
 /* Klassen */
