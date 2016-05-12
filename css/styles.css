@@ -1,4 +1,8 @@
 /* Elemente */
+* {
+    box-sizing: border-box;
+}
+
 a {
     text-decoration: none;
     color: #cc0000;
@@ -26,7 +30,7 @@ body {
 
 h1 {
     text-align: center;
-    font-size: 400%;
+    font-size: 4rem;
     color:#3e3e3e;
 }
 
@@ -43,14 +47,28 @@ header > img {
     display:block;
     margin: 0 auto;
     max-width: 100%;
+    margin-top:2%;
 }
 
 nav > ul > li {
-    display: inline-block;
-    padding: 0 20px 0 20px;
+    display:inline-block;
+    width:10%;
+}
+
+nav > ul > li > a {
+    display:block;
+    background-color: #faeff0;
+    text-align:center;
+    padding: 10% 0 10% 0;
+}
+
+nav > ul > li > a:hover {
+    background-color: #fff9fa;
 }
 
 nav {
+    margin: 3% 0 3% 0;
+    margin: 3% 0 3% 0;
     text-align: center;
 }
 
