@@ -1,8 +1,8 @@
 /*
  * FARBSCHEMA (erstellt mit http://paletton.com/#uid=1030u0kayw02NSs6iHRfvr3lblp)
  * Sehr hell: #FFEAE9 (Hintergrund)
- * hell: #FFD1CD (Navigations-Buttons)
- * mittel: #FFB1AB
+ * hell: #FFD1CD (Navigations-Buttons, Hintergrundgrafik b)
+ * mittel: #FFB1AB (Hintergrundgrafik a)
  * dunkel: #D8776F (Links, mit Hover)
  * Sehr dunkel: #AA423A (Links, ohne Hover)
  */
@@ -39,13 +39,12 @@ h1 {
     color:#3e3e3e;
 }
 
-header > h2 {
-    text-align: center;
-}
-
-
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
+}
+
+header > h2 {
+    text-align: center;
 }
 
 header > img {
@@ -53,6 +52,12 @@ header > img {
     margin: 0 auto;
     max-width: 100%;
     margin-top:2%;
+}
+
+nav {
+    margin: 3% 0 3% 0;
+    margin: 3% 0 3% 0;
+    text-align: center;
 }
 
 nav > ul > li {
@@ -69,12 +74,6 @@ nav > ul > li > a {
 
 nav > ul > li > a:hover {
     background-color: transparent;
-}
-
-nav {
-    margin: 3% 0 3% 0;
-    margin: 3% 0 3% 0;
-    text-align: center;
 }
 
 /* Klassen */
