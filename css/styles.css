@@ -7,6 +7,10 @@
  * Sehr dunkel: #AA423A (Links, ohne Hover)
  */
 
+/*
+ * DESKTOP FIRST
+ */
+
 /* Elemente */
 * {
     box-sizing: border-box;
@@ -29,7 +33,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color:#262626;
-    width: 90%;
+    width: 90%;     /* Da dies das oberste Element ist, an das sich die Größen der anderen Elemente anpassen, wird hier % statt rem benötigt. */
     margin: 0 auto;
 }
 
@@ -50,26 +54,25 @@ header > h2 {
 header > img {
     display:block;
     margin: 0 auto;
-    max-width: 100%;
-    margin-top:2%;
+    max-width: 100rem;
+    margin-top:2rem;
 }
 
 nav {
-    margin: 3% 0 3% 0;
-    margin: 3% 0 3% 0;
+    margin: 3rem 0;
     text-align: center;
 }
 
 nav > ul > li {
     display:inline-block;
-    width:10%;
+    margin:0.1rem;
 }
 
 nav > ul > li > a {
-    display:block;
+    display:inline-block;
     background-color: #FFD1CD;
-    text-align:center;
-    padding: 10% 0 10% 0;
+    padding: 1rem;
+    width:8rem;
 }
 
 nav > ul > li > a:hover {
@@ -80,5 +83,20 @@ nav > ul > li > a:hover {
 .breakable {
     word-break: break-all;
 }
+
+/* IDs */
+
+
+
+/* ######
+ * MOBILE
+ * ######
+ */
+
+/* Elemente */
+
+
+
+/* Klassen */
 
 /* IDs */
