@@ -1,3 +1,12 @@
+/*
+ * FARBSCHEMA (erstellt mit http://paletton.com/#uid=1030u0kayw02NSs6iHRfvr3lblp)
+ * Sehr hell: #FFEAE9 (Hintergrund)
+ * hell: #FFD1CD (Navigations-Buttons)
+ * mittel: #FFB1AB
+ * dunkel: #D8776F (Links, mit Hover)
+ * Sehr dunkel: #AA423A (Links, ohne Hover)
+ */
+
 /* Elemente */
 * {
     box-sizing: border-box;
@@ -5,22 +14,18 @@
 
 a {
     text-decoration: none;
-    color: #cc0000;
+    color: #AA423A;
 }
 
 a:hover{
-    color: #990000;
-}
-
-/* NÖTIG??*/
-b {
-    font-weight: 500;
+    color: #D8776F;
 }
 
 body {
     background-image: url(../images/background.png);
     background-position: top;
     background-repeat: repeat-x;
+    background-color:#FFEAE9;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color:#262626;
@@ -57,13 +62,13 @@ nav > ul > li {
 
 nav > ul > li > a {
     display:block;
-    background-color: #faeff0;
+    background-color: #FFD1CD;
     text-align:center;
     padding: 10% 0 10% 0;
 }
 
 nav > ul > li > a:hover {
-    background-color: #fff9fa;
+    background-color: transparent;
 }
 
 nav {
