@@ -29,10 +29,10 @@ body {
     background-image: url(../images/background.png);
     background-position: top;
     background-repeat: repeat-x;
-    background-color:#FFEAE9;
+    background-color: #FFEAE9;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    color:#262626;
+    color: #262626;
     width: 90%;     /* Da dies das oberste Element ist, an das sich die Größen der anderen Elemente anpassen, wird hier % statt rem benötigt. */
     margin: 0 auto;
 }
@@ -40,7 +40,7 @@ body {
 h1 {
     text-align: center;
     font-size: 4rem;
-    color:#3e3e3e;
+    color: #3e3e3e;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -52,10 +52,14 @@ header > h2 {
 }
 
 header > img {
-    display:block;
+    display: block;
     margin: 0 auto;
     max-width: 100rem;
-    margin-top:2rem;
+    margin-top: 2rem;
+}
+
+html {
+    font-size: 1em;
 }
 
 nav {
@@ -64,15 +68,15 @@ nav {
 }
 
 nav > ul > li {
-    display:inline-block;
-    margin:0.1rem;
+    display: inline-block;
+    margin: 0.1rem;
 }
 
 nav > ul > li > a {
-    display:inline-block;
+    display: inline-block;
     background-color: #FFD1CD;
     padding: 1rem;
-    width:8rem;
+    width: 8rem;
 }
 
 nav > ul > li > a:hover {
