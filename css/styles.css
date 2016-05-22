@@ -1,10 +1,11 @@
 /*
- * FARBSCHEMA (erstellt mit http://paletton.com/#uid=1030u0kayw02NSs6iHRfvr3lblp)
- * Sehr hell: #FFEAE9 (Hintergrund)
- * hell: #FFD1CD (Navigations-Buttons, Hintergrundgrafik b)
- * mittel: #FFB1AB (Hintergrundgrafik a)
+ * FARBSCHEMA (erstellt mit http://paletton.com/#uid=1030u0kayw02NSs6iHRfvr3lblp, abgeändert)
+ * Sehr hell: #FFFFFF (Hintergrund)
+ * hell: #FFEAE9 (Navigations-Buttons)
  * dunkel: #D8776F (Links, mit Hover)
  * Sehr dunkel: #AA423A (Links, ohne Hover)
+ * Dunkelgrau: #262626 (Schrift default)
+ * Hellgrau: #3e3e3e (Überschriften)
  */
 
 /*
@@ -17,8 +18,8 @@
 }
 
 a {
-    text-decoration: none;
     color: #AA423A;
+    text-decoration: none;
 }
 
 a:hover{
@@ -26,24 +27,24 @@ a:hover{
 }
 
 body {
+    background-color: #fff;
     background-image: url(../images/background.png);
     background-position: top;
     background-repeat: repeat-x;
-    background-color: #FFEAE9;
+    color: #262626;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    color: #262626;
-    width: 90%;     /* Da dies das oberste Element ist, an das sich die Größen der anderen Elemente anpassen, wird hier % statt rem benötigt. */
     margin: 0 auto;
+    width: 90%;     /* Da dies das oberste Element ist, an das sich die Größen der anderen Elemente anpassen, wird hier % statt rem benötigt. */
 }
 
 h1 {
-    text-align: center;
     font-size: 4rem;
-    color: #3e3e3e;
+    text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
+    color: #3e3e3e;
     font-weight: 700;
 }
 
@@ -53,35 +54,35 @@ header > h2 {
 
 header > img {
     display: block;
-    margin: 0 auto;
+    margin: 2rem auto;
     max-width: 100rem;
-    margin-top: 2rem;
 }
 
 html {
     font-size: 1em;
 }
 
-nav {
-    margin: 3rem 0;
-    text-align: center;
-}
-
-nav > ul > li {
-    display: inline-block;
-    margin: 0.1rem;
+nav > ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 3.2rem 0;
+    padding: 0;
 }
 
 nav > ul > li > a {
-    display: inline-block;
-    background-color: #FFD1CD;
-    padding: 1rem;
+    background-color: #FFEAE9;
+    display:block;
+    margin: 0 0.1rem;
+    padding: 1.2rem;
+    text-align: center;
     width: 8rem;
 }
 
 nav > ul > li > a:hover {
     background-color: transparent;
 }
+
 
 /* Klassen */
 .breakable {
