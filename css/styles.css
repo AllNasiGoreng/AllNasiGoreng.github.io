@@ -115,7 +115,7 @@ section > ol > li {
 }
 
 .veggie {
-    border-image: url()
+    box-sizing: padding-box;
 }
 
 /* IDs */
