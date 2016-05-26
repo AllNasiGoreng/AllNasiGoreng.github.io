@@ -115,7 +115,13 @@ section > ol > li {
 }
 
 .veggie {
-    box-sizing: padding-box;
+    width: 15px;
+    margin: 0 0 0 5px;
+}
+
+.fleisch {
+    width: 17px;
+    margin: 0 0 0 5px;
 }
 
 /* IDs */
