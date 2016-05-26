@@ -12,7 +12,8 @@
  * DESKTOP FIRST
  */
 
-/* Elemente */
+@media all {
+    /* Elemente */
 * {
     box-sizing: border-box;
 }
@@ -90,10 +91,6 @@ nav > ul > li > a:hover {
     background-color: transparent;
 }
 
-ol, ul {
-    list-style-position: intside;
-}
-
 section > ol > li {
     margin:0.5rem 0;
 }
@@ -132,6 +129,7 @@ section > ol > li {
 #originales_Rezept > h2, #alternatives_Rezept > h2 {
     display:inline-block;
 }
+}
 
 
 /* ######
@@ -139,30 +137,65 @@ section > ol > li {
  * ######
  */
 
-@media screen and (max-width:480px) and (orientation:landscape) {
+@media screen and (max-width: 480px)  {
 /*
  * TODO: 
- * body: width 90%;
- * Menü: untereinander, aufklappbar
+ * Menü: aufklappbar
  * Bilder: Width: 100%, clear:both;
- * .download: display:none;
 */
     
 /* Elemente */
     body {
-        width:100%;
-        color:aqua;
+        max-width:99%;
+        position: relative;
+        background:none;
+        top:0;
+        left:0;
+        margin:0 auto;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.2rem;
+    }
+    
+    h2, h3 {
+        text-align: center;
+    }
+    
+    header > img {
+        display: none; 
     }
     
     nav {
-        
+        position:relative;
+        bottom:0;
+        margin:0;
     }
     
-    .img-right {
+    nav > ul {
+        flex-direction: column;
+        margin: 0;
+        padding:0;
+    }
+    
+    nav > ul > li > a {
+        width:100%;
+        margin:0;
+    }
+    
+    section {
+        padding:0.5rem;
+    }
+    
+    
+/* Klassen */
+    .download, .img-right {
         display:none;
     }
-
-/* Klassen */
 
 /* IDs */
     
