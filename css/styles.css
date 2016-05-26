@@ -42,6 +42,11 @@ a:hover{
     color: #D8776F;
 }
 
+footer {
+    font-size: 70%;
+    background-color: #ffcccc;
+}
+
 h1 {
     font-size: 4rem;
     text-align: center;
@@ -62,14 +67,6 @@ header > img {
     max-width: 100rem;
 }
 
-ol, ul {
-    list-style-position: intside;
-}
-
-section > ol > li {
-    margin:0.5rem 0;
-}
-
 nav > ul {
     display: flex;
     justify-content: center;
@@ -87,19 +84,18 @@ nav > ul > li > a {
     width: 8rem;
 }
 
-<<<<<<< HEAD
-footer {
-    font-size: 70%;
-    background-color: #ffcccc;
-}
-
-=======
 nav > ul > li > a:hover {
     background-color: transparent;
 }
 
+ol, ul {
+    list-style-position: intside;
+}
 
->>>>>>> origin/master
+section > ol > li {
+    margin:0.5rem 0;
+}
+
 /* Klassen */
 .breakable {
     word-break: break-all;
@@ -140,8 +136,6 @@ nav > ul > li > a:hover {
  */
 
 /* Elemente */
-
-
 
 /* Klassen */
 
