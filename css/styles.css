@@ -109,6 +109,7 @@ section > ol > li {
 .img-right {
     float:right;
     margin:0 0 2rem 1rem;
+    max-width: 20rem;
 }
 
 .veggie {
@@ -146,12 +147,12 @@ section > ol > li {
     
 /* Elemente */
     body {
+        background:none;
+         left:0;
+        margin:0 auto;
         max-width:99%;
         position: relative;
-        background:none;
         top:0;
-        left:0;
-        margin:0 auto;
     }
     
     h1 {
@@ -162,41 +163,43 @@ section > ol > li {
         font-size: 1.2rem;
     }
     
+    section > h3 {
+        font-size: 1.1rem;
+    }
+    
     h2, h3 {
         text-align: center;
     }
     
-    header > img {
-        display: none; 
-    }
-    
     nav {
-        position:relative;
-        bottom:0;
-        margin:0;
+        /*position at bottom*/
     }
     
     nav > ul {
         flex-direction: column;
-        margin: 0;
-        padding:0;
     }
     
     nav > ul > li > a {
-        width:100%;
         margin:0;
+        width:100%;
     }
     
     section {
         padding:0.5rem;
     }
     
+    section h2 {
+        text-align: center;
+    }
+    
     
 /* Klassen */
-    .download, .img-right {
+    .download, .img-right, header > img {
         display:none;
     }
 
 /* IDs */
-    
+    #originales_Rezept > h2, #alternatives_Rezept > h2 {
+        display: block;
+    }
 }
