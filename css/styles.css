@@ -1,67 +1,136 @@
+/*
+ * FARBSCHEMA (erstellt mit http://paletton.com/#uid=1030u0kayw02NSs6iHRfvr3lblp, abgeändert)
+ * Sehr hell: #FFFFFF (Hintergrund)
+ * hell: #FFEAE9 (Navigations-Buttons)
+ * dunkel: #D8776F (Links, mit Hover)
+ * Sehr dunkel: #AA423A (Links, ohne Hover)
+ * Dunkelgrau: #262626 (Schrift default)
+ * Hellgrau: #3e3e3e (Überschriften)
+ */
+
+/*
+ * DESKTOP FIRST
+ */
+
 /* Elemente */
-a {
-    text-decoration: none;
-    color: #cc0000;
-}
-
-a:hover{
-    color: #990000;
-}
-
-/* NÖTIG??*/
-b {
-    font-weight: 500;
+* {
+    box-sizing: border-box;
 }
 
 body {
+    background-color: #fff;
     background-image: url(../images/background.png);
     background-position: top;
     background-repeat: repeat-x;
+    color: #262626;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    color:#262626;
-    width: 90%;
     margin: 0 auto;
+    max-width: 70%;     /* Da dies das oberste Element ist, an das sich die Größen der anderen Elemente anpassen, wird hier % statt rem benötigt. */
+}
+
+html {
+    font-size: 1em;
+}
+
+a {
+    color: #AA423A;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #D8776F;
 }
 
 h1 {
+    font-size: 4rem;
     text-align: center;
-    font-size: 400%;
-    color:#3e3e3e;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #3e3e3e;
+    font-weight: 700;
 }
 
 header > h2 {
     text-align: center;
 }
 
-
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 700;
-}
-
 header > img {
+    display: block;
+    margin: 2rem auto;
+    max-width: 100rem;
+}
+
+ol, ul {
+    list-style-position: intside;
+}
+
+section > ol > li {
+    margin:0.5rem 0;
+}
+
+nav > ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 3.2rem 0;
+    padding:0;
+}
+
+nav > ul > li > a {
+    background-color: #FFEAE9;
     display:block;
-    margin: 0 auto;
-    max-width: 100%;
-}
-
-nav > ul > li {
-    display: inline-block;
-    padding: 0 20px 0 20px;
-}
-
-nav {
+    margin: 0 0.1rem;
+    padding: 1.2rem;
     text-align: center;
+    width: 8rem;
 }
 
+<<<<<<< HEAD
 footer {
     font-size: 70%;
     background-color: #ffcccc;
 }
 
+=======
+nav > ul > li > a:hover {
+    background-color: transparent;
+}
+
+
+>>>>>>> origin/master
 /* Klassen */
 .breakable {
     word-break: break-all;
 }
+
+.img-right {
+    float:right;
+    margin:0 0 2rem 1rem;
+}
+
+/* IDs */
+#Alvin h2, #Linda h2, footer {
+    clear:both;
+}
+
+
+/* ######
+ * MOBILE
+ * ######
+ */
+
+/*
+ * TODO: 
+ * Menü: untereinander, aufklappbar
+ * Bilder: Width: 100%
+ */
+
+/* Elemente */
+
+
+
+/* Klassen */
 
 /* IDs */
