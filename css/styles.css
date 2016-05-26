@@ -54,6 +54,11 @@ nav {
     text-align: center;
 }
 
+footer {
+    font-size: 70%;
+    background-color: #ffcccc;
+}
+
 /* Klassen */
 .breakable {
     word-break: break-all;
