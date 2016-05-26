@@ -35,7 +35,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     margin: 0 auto;
-    width: 90%;     /* Da dies das oberste Element ist, an das sich die Größen der anderen Elemente anpassen, wird hier % statt rem benötigt. */
+    max-width: 70%;     /* Da dies das oberste Element ist, an das sich die Größen der anderen Elemente anpassen, wird hier % statt rem benötigt. */
 }
 
 h1 {
