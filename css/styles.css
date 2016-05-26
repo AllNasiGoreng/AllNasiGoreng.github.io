@@ -139,16 +139,31 @@ section > ol > li {
  * ######
  */
 
+@media screen and (max-width:480px) and (orientation:landscape) {
 /*
  * TODO: 
  * body: width 90%;
  * Menü: untereinander, aufklappbar
  * Bilder: Width: 100%, clear:both;
  * .download: display:none;
- */
-
+*/
+    
 /* Elemente */
+    body {
+        width:100%;
+        color:aqua;
+    }
+    
+    nav {
+        
+    }
+    
+    .img-right {
+        display:none;
+    }
 
 /* Klassen */
 
 /* IDs */
+    
+}
