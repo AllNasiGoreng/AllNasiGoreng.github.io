@@ -17,15 +17,6 @@
     box-sizing: border-box;
 }
 
-a {
-    color: #AA423A;
-    text-decoration: none;
-}
-
-a:hover{
-    color: #D8776F;
-}
-
 body {
     background-color: #fff;
     background-image: url(../images/background.png);
@@ -36,6 +27,19 @@ body {
     font-weight: 300;
     margin: 0 auto;
     max-width: 70%;     /* Da dies das oberste Element ist, an das sich die Größen der anderen Elemente anpassen, wird hier % statt rem benötigt. */
+}
+
+html {
+    font-size: 1em;
+}
+
+a {
+    color: #AA423A;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #D8776F;
 }
 
 h1 {
@@ -58,8 +62,12 @@ header > img {
     max-width: 100rem;
 }
 
-html {
-    font-size: 1em;
+ol, ul {
+    list-style-position: intside;
+}
+
+section > ol > li {
+    margin:0.5rem 0;
 }
 
 nav > ul {
@@ -67,7 +75,7 @@ nav > ul {
     justify-content: center;
     list-style: none;
     margin: 3.2rem 0;
-    padding: 0;
+    padding:0;
 }
 
 nav > ul > li > a {
@@ -89,13 +97,26 @@ nav > ul > li > a:hover {
     word-break: break-all;
 }
 
-/* IDs */
+.img-right {
+    float:right;
+    margin:0 0 2rem 1rem;
+}
 
+/* IDs */
+#Alvin h2, #Linda h2, footer {
+    clear:both;
+}
 
 
 /* ######
  * MOBILE
  * ######
+ */
+
+/*
+ * TODO: 
+ * Menü: untereinander, aufklappbar
+ * Bilder: Width: 100%
  */
 
 /* Elemente */
