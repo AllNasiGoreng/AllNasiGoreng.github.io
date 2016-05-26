@@ -46,6 +46,7 @@ a:hover{
 footer {
     font-size: 70%;
     background-color: #ffcccc;
+    padding-left: 10px;
 }
 
 h1 {
@@ -111,6 +112,10 @@ section > ol > li {
 .img-right {
     float:right;
     margin:0 0 2rem 1rem;
+}
+
+.veggie {
+    border-image: url()
 }
 
 /* IDs */
