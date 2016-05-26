@@ -113,13 +113,13 @@ section > ol > li {
 }
 
 .veggie {
-    width: 15px;
-    margin: 0 0 0 5px;
+    width: 30px;
+    margin: 0 0 0 0.5rem  
 }
 
 .fleisch {
-    width: 17px;
-    margin: 0 0 0 5px;
+    width: 40px;
+    margin: 0 0 0 0.5rem;
 }
 
 /* IDs */
