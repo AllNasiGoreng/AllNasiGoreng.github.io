@@ -105,6 +105,12 @@ nav > ul > li > a:hover {
     word-break: break-all;
 }
 
+.download {
+    margin-left:0.5rem;
+    vertical-align: middle;
+    width:100%;
+}
+
 .img-right {
     float:right;
     margin:0 0 2rem 1rem;
@@ -115,6 +121,10 @@ nav > ul > li > a:hover {
     clear:both;
 }
 
+#originales_Rezept > h2, #alternatives_Rezept > h2 {
+    display:inline-block;
+}
+
 
 /* ######
  * MOBILE
@@ -123,8 +133,10 @@ nav > ul > li > a:hover {
 
 /*
  * TODO: 
+ * body: width 90%;
  * Menü: untereinander, aufklappbar
- * Bilder: Width: 100%
+ * Bilder: Width: 100%, clear:both;
+ * .download: display:none;
  */
 
 /* Elemente */
