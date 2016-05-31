@@ -91,10 +91,36 @@ nav > ul > li > a:hover {
     background-color: transparent;
 }
 
+/*Feedback elemente*/
+    
 section > ol > li {
     margin:0.5rem 0;
 }
-
+    
+legend{
+    font-family: fantasy;
+    color: brown;
+}
+    
+fieldset{
+    background-color:#FFEAE9;
+    margin-bottom: 0.5rem;
+}
+    
+label{
+    font-family: Gill sans, sans-serif;
+}
+    
+textarea{
+    height: 100px;
+    width: 400px;
+    margin-top: 0.4rem;
+}
+    
+input{
+    
+}
+    
 /* Klassen */
 .breakable {
     word-break: break-all;
