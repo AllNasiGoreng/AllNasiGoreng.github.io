@@ -49,10 +49,10 @@
     }
 
     footer {
-        font-size: 70%; /*rem, bitte*/
-        background-color: #ffcccc; /*Warum die Farbe außerhalb des Schemas?*/
-        padding-left: 10px; /*Padding an anderen Seiten?*/
-    }
+        font-size: 0.75rem;
+        background-color: #ffcccc;
+        padding-left: 0.5rem;
+    }   
 
     h1 {
         font-size: 4rem;
@@ -116,8 +116,8 @@
     }
 
     textarea {
-        height: 100px; /*Warum die Angabe in undynamischer Größe? % oder rem wäre gut...*/
-        width: 400px;
+        width: 20rem;
+        height: 6.5rem;
         margin-top: 0.4rem;
     }
 
@@ -174,8 +174,15 @@
     
     /* Elemente */
     
+
     body {
         position: relative;
+    }
+        
+    footer {
+        position: absolute;
+        margin-top: 19rem;
+        width:100%;
     }
     
     nav {
@@ -183,17 +190,11 @@
         bottom:-19rem;
         width:100%
     }
-    
-    footer {
-        position: absolute;
-        margin-top:19rem;
-        width:100%;
-    }
+
     
     nav > ul {
         flex-direction: column;
         margin: 0;
-        
     }
 
     nav > ul > li > a {
@@ -210,11 +211,19 @@
         margin:0;
     }
     
+    .fleisch {
+        width: 2.25rem;
+        margin: 0 0 0 0.5rem;
+    }
+    
     .img-right {
         display:none;
     }
     
-
+    .veggie {
+        width: 1.75rem;
+        margin: 0 0 0 0.5rem  
+    }
 }
 
 /* ######
@@ -259,7 +268,7 @@
     /* Klassen */
     
     .download, .img-right, header > img {
-        display:none;
+        display: none;
     }
 
     /* IDs */
