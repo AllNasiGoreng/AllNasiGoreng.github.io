@@ -8,156 +8,214 @@
  * Hellgrau: #3e3e3e (Überschriften)
  */
 
-/*
+
+/* #############
  * DESKTOP FIRST
+ * #############
  */
 
 @media all {
+    
     /* Elemente */
-* {
-    box-sizing: border-box;
-}
-
-body {
-    background-color: #fff;
-    background-image: url(../images/background.png);
-    background-position: top;
-    background-repeat: repeat-x;
-    color: #262626;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    margin: 0 auto;
-    max-width: 70%;     /* Da dies das oberste Element ist, an das sich die Größen der anderen Elemente anpassen, wird hier % statt rem benötigt. */
-}
-
-html {
-    font-size: 1em;
-    padding:0;
-}
-
-a {
-    color: #AA423A;
-    text-decoration: none;
-}
-
-a:hover{
-    color: #D8776F;
-}
-
-footer {
-    font-size: 70%;
-    background-color: #ffcccc;
-    padding-left: 10px;
-}
-
-h1 {
-    font-size: 4rem;
-    text-align: center;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    color: #3e3e3e;
-    font-weight: 700;
-}
-
-header > h2 {
-    text-align: center;
-}
-
-header > img {
-    display: block;
-    margin: 2rem auto;
-    max-width: 100rem;
-}
-
-nav > ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    margin: 3.2rem 0;
-    padding:0;
-}
-
-nav > ul > li > a {
-    background-color: #FFEAE9;
-    display:block;
-    margin: 0 0.1rem;
-    padding: 1.2rem;
-    text-align: center;
-    width: 8rem;
-}
-
-nav > ul > li > a:hover {
-    background-color: transparent;
-}
-
-/*Feedback elemente*/
     
-section > ol > li {
-    margin:0.5rem 0;
-}
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #fff;
+        background-image: url(../images/background.png);
+        background-position: top;
+        background-repeat: repeat-x;
+        color: #262626;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        margin: 0 auto;
+        max-width: 70%;     /* Da dies das oberste Element ist, an das sich die Größen der anderen Elemente anpassen, wird hier % statt rem benötigt. */
+    }
+
+    html {
+        font-size: 1em;
+        padding:0;
+    }
+
+    a {
+        color: #AA423A;
+        text-decoration: none;
+    }
+
+    a:hover{
+        color: #D8776F;
+    }
+
+    footer {
+        font-size: 70%; /*rem, bitte*/
+        background-color: #ffcccc; /*Warum die Farbe außerhalb des Schemas?*/
+        padding-left: 10px; /*Padding an anderen Seiten?*/
+    }
+
+    h1 {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        color: #3e3e3e;
+        font-weight: 700;
+    }
+
+    header > h2 {
+        text-align: center;
+    }
+
+    header > img {
+        display: block;
+        margin: 2rem auto;
+        max-width: 100rem;
+    }
+
+    nav > ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        margin: 3.2rem 0;
+        padding:0;
+    }
+
+    nav > ul > li > a {
+        background-color: #FFEAE9;
+        display:block;
+        margin: 0 0.1rem;
+        padding: 1.2rem;
+        text-align: center;
+        width: 8rem;
+    }
+
+    nav > ul > li > a:hover {
+        background-color: transparent;
+    }
+
+    /*Feedback elemente*/
+
+    section > ol > li {
+        margin:0.5rem 0;
+    }
+
+    legend {
+        font-family: fantasy; /*Warum der Schriftwechsel?*/
+        color: brown; /*Warum die Farbe außerhalb des Farbschemas?*/
+    }
+
+    fieldset {
+        background-color:#FFEAE9;
+        margin-bottom: 0.5rem;
+    }
+
+    label {
+        font-family: Gill sans, sans-serif; /*Warum der Schriftwechsel?*/
+    }
+
+    textarea {
+        height: 100px; /*Warum die Angabe in undynamischer Größe? % oder rem wäre gut...*/
+        width: 400px;
+        margin-top: 0.4rem;
+    }
+
+    input{
+        /*?*/
+    }
+
+    /* Klassen */
     
-legend{
-    font-family: fantasy;
-    color: brown;
-}
+    .breakable {
+        word-break: break-all;
+    }
+
+    .download {
+        margin-left:0.5rem;
+        vertical-align: middle;
+        width:100%;
+    }
+
+    .img-right {
+        float:right;
+        margin:0 0 2rem 1rem;
+        max-width: 20rem;
+    }
+
+    .veggie {
+        width: 30px;
+        margin: 0 0 0 0.5rem  
+    }
+
+    .fleisch {
+        width: 40px;
+        margin: 0 0 0 0.5rem;
+    }
+
+    /* IDs */
     
-fieldset{
-    background-color:#FFEAE9;
-    margin-bottom: 0.5rem;
-}
-    
-label{
-    font-family: Gill sans, sans-serif;
-}
-    
-textarea{
-    height: 100px;
-    width: 400px;
-    margin-top: 0.4rem;
-}
-    
-input{
-    
-}
-    
-/* Klassen */
-.breakable {
-    word-break: break-all;
+    #Alvin h2, #Linda h2, footer {
+        clear:both;
+    }
+
+    #originales_Rezept > h2, #alternatives_Rezept > h2 {
+        display:inline-block;
+    }
 }
 
-.download {
-    margin-left:0.5rem;
-    vertical-align: middle;
-    width:100%;
-}
 
-.img-right {
-    float:right;
-    margin:0 0 2rem 1rem;
-    max-width: 20rem;
-}
+/* ##################
+ * KLEINER BILDSCHIRM
+ * ##################
+ */
 
-.veggie {
-    width: 30px;
-    margin: 0 0 0 0.5rem  
-}
+@media screen and (max-width: 670px) {
+    
+    /* Elemente */
+    
+    body {
+        position: relative;
+    }
+    
+    nav {
+        position:absolute;
+        bottom:-19rem;
+        width:100%
+    }
+    
+    footer {
+        position: absolute;
+        margin-top:19rem;
+        width:100%;
+    }
+    
+    nav > ul {
+        flex-direction: column;
+        margin: 0;
+        
+    }
 
-.fleisch {
-    width: 40px;
-    margin: 0 0 0 0.5rem;
-}
+    nav > ul > li > a {
+        display:block;
+        margin: 0;
+        text-align: center;
+        width: 100%;
+    }
+    
+    /* Klassen */
+    
+    .download {
+        display:block;
+        margin:0;
+    }
+    
+    .img-right {
+        display:none;
+    }
+    
 
-/* IDs */
-#Alvin h2, #Linda h2, footer {
-    clear:both;
 }
-
-#originales_Rezept > h2, #alternatives_Rezept > h2 {
-    display:inline-block;
-}
-}
-
 
 /* ######
  * MOBILE
@@ -165,20 +223,12 @@ input{
  */
 
 @media screen and (max-width: 480px)  {
-/*
- * TODO: 
- * Menü: aufklappbar
- * Bilder: Width: 100%, clear:both;
-*/
     
-/* Elemente */
+    /* Elemente */
+    
     body {
         background:none;
-         left:0;
-        margin:0 auto;
         max-width:99%;
-        position: relative;
-        top:0;
     }
     
     h1 {
@@ -197,19 +247,6 @@ input{
         text-align: center;
     }
     
-    nav {
-        /*position at bottom*/
-    }
-    
-    nav > ul {
-        flex-direction: column;
-    }
-    
-    nav > ul > li > a {
-        margin:0;
-        width:100%;
-    }
-    
     section {
         padding:0.5rem;
     }
@@ -219,12 +256,14 @@ input{
     }
     
     
-/* Klassen */
+    /* Klassen */
+    
     .download, .img-right, header > img {
         display:none;
     }
 
-/* IDs */
+    /* IDs */
+    
     #originales_Rezept > h2, #alternatives_Rezept > h2 {
         display: block;
     }
