@@ -142,15 +142,17 @@
         margin:0 0 2rem 1rem;
         max-width: 20rem;
     }
+    
+    .veggie, .fleisch {
+        margin: 0 0 0 0.5rem  
+    }
 
     .veggie {
         width: 30px;
-        margin: 0 0 0 0.5rem  
     }
 
     .fleisch {
         width: 40px;
-        margin: 0 0 0 0.5rem;
     }
 
     /* IDs */
@@ -178,17 +180,18 @@
     body {
         position: relative;
     }
+    
+    footer, nav {
+        position: absolute;
+        width:100%
+    }
         
     footer {
-        position: absolute;
         margin-top: 19rem;
-        width:100%;
     }
     
     nav {
-        position:absolute;
         bottom:-19rem;
-        width:100%
     }
 
     
