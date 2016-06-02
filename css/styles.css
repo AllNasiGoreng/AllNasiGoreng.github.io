@@ -45,9 +45,9 @@ a:hover{
 }
 
 footer {
-    font-size: 70%;
+    font-size: 0.75rem;
     background-color: #ffcccc;
-    padding-left: 10px;
+    padding-left: 0.5rem;
 }
 
 h1 {
@@ -112,8 +112,8 @@ label{
 }
     
 textarea{
-    height: 100px;
-    width: 400px;
+    width: 20rem;
+    height: 6.5rem;
     margin-top: 0.4rem;
 }
     
@@ -139,12 +139,12 @@ input{
 }
 
 .veggie {
-    width: 30px;
+    width: 1.75rem;
     margin: 0 0 0 0.5rem  
 }
 
 .fleisch {
-    width: 40px;
+    width: 2.25rem;
     margin: 0 0 0 0.5rem;
 }
 
