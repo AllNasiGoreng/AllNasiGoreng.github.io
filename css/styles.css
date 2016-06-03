@@ -94,6 +94,13 @@
     nav > ul > li > a:hover {
         background-color: transparent;
     }
+    
+    summary {
+        cursor: pointer;
+        font-weight: 700;
+        display:block;
+        padding:1rem 0;
+    }
 
     /*Feedback elemente*/
 
@@ -119,10 +126,6 @@
         width: 20rem;
         height: 6.5rem;
         margin-top: 0.4rem;
-    }
-
-    input{
-        /*?*/
     }
 
     /* Klassen */
@@ -205,6 +208,17 @@
         margin: 0;
         text-align: center;
         width: 100%;
+    }
+    
+    summary {
+        font-weight: 700;
+        display:block;
+    }
+    
+    details {
+        margin:0.25rem;
+        border: #FFEAE9 dotted 0.2rem;
+        padding: 0rem 1rem;
     }
     
     /* Klassen */
