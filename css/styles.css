@@ -51,7 +51,8 @@
     footer {
         font-size: 0.75rem;
         background-color: #ffcccc;
-        padding-left: 0.5rem;
+        padding: 0.5rem;
+        padding-left: 0.75rem;
     }   
 
     h1 {
@@ -101,6 +102,10 @@
         display:block;
         padding:1rem 0;
     }
+    
+    p{
+        text-align: right;
+    }
 
     /*Feedback elemente*/
 
@@ -109,23 +114,26 @@
     }
 
     legend {
-        font-family: fantasy; /*Warum der Schriftwechsel?*/
-        color: brown; /*Warum die Farbe außerhalb des Farbschemas?*/
+        font-weight:; 
     }
 
+    input {
+        font-size: inherit;
+        font-weight: inherit;
+        margin: inherit
+    }
+    
     fieldset {
         background-color:#FFEAE9;
         margin-bottom: 0.5rem;
-    }
-
-    label {
-        font-family: Gill sans, sans-serif; /*Warum der Schriftwechsel?*/
     }
 
     textarea {
         width: 20rem;
         height: 6.5rem;
         margin-top: 0.4rem;
+        font-size: inherit;
+        font-weight: inherit;
     }
 
     /* Klassen */
@@ -147,15 +155,20 @@
     }
     
     .veggie, .fleisch {
-        margin: 0 0 0 0.5rem  
+        margin: 0 0 0 0.5rem; 
     }
 
     .veggie {
-        width: 30px;
+        width: 1.5rem;
     }
 
     .fleisch {
-        width: 40px;
+        width: 1.5rem;
+    }
+    
+    .portion {
+        width: 1.5rem;
+        margin-right: 0.5rem;
     }
 
     /* IDs */
