@@ -109,23 +109,23 @@
 
     /*Feedback elemente*/
 
-    section > ol > li {
-        margin:0.5rem 0;
+    fieldset {
+        background-color:#FFEAE9;
+        margin-bottom: 0.5rem;
     }
-
-    legend {
-        font-weight:; 
-    }
-
+    
     input {
         font-size: inherit;
         font-weight: inherit;
         margin: inherit
     }
     
-    fieldset {
-        background-color:#FFEAE9;
-        margin-bottom: 0.5rem;
+    legend {
+        font-weight:; 
+    }
+    
+    section > ol > li {
+        margin:0.5rem 0;
     }
 
     textarea {
@@ -143,9 +143,18 @@
     }
 
     .download {
+        border:0;
         margin-left:0.5rem;
         vertical-align: middle;
         width:100%;
+    }
+    
+    .fleisch {
+        width: 1.3rem;
+    }
+    
+    .fleisch, .veggie {
+        margin: 0 0 0 0.5rem; 
     }
 
     .img-right {
@@ -154,21 +163,13 @@
         max-width: 20rem;
     }
     
-    .veggie, .fleisch {
-        margin: 0 0 0 0.5rem; 
+    .portion {
+        width: 1.5rem;
+        margin-right: 0.5rem;
     }
 
     .veggie {
         width: 1.3rem;
-    }
-
-    .fleisch {
-        width: 1.3rem;
-    }
-    
-    .portion {
-        width: 1.5rem;
-        margin-right: 0.5rem;
     }
 
     /* IDs */
@@ -192,18 +193,23 @@
     
     /* Elemente */
     
-
     body {
         position: relative;
+    }
+    
+    details {
+        margin:0.25rem;
+        border: #FFEAE9 dotted 0.2rem;
+        padding: 0rem 1rem;
+    }
+    
+    footer {
+        margin-top: 19rem;
     }
     
     footer, nav {
         position: absolute;
         width:100%
-    }
-        
-    footer {
-        margin-top: 19rem;
     }
     
     nav {
@@ -228,12 +234,6 @@
         display:block;
     }
     
-    details {
-        margin:0.25rem;
-        border: #FFEAE9 dotted 0.2rem;
-        padding: 0rem 1rem;
-    }
-    
     /* Klassen */
     
     .download {
@@ -243,7 +243,6 @@
     
     .fleisch {
         width: 2.25rem;
-        margin: 0 0 0 0.5rem;
     }
     
     .img-right {
@@ -252,7 +251,6 @@
     
     .veggie {
         width: 1.75rem;
-        margin: 0 0 0 0.5rem  
     }
 }
 
@@ -278,22 +276,17 @@
         font-size: 1.2rem;
     }
     
-    section > h3 {
-        font-size: 1.1rem;
-    }
-    
     h2, h3 {
         text-align: center;
+    }
+    
+    h3 {
+        font-size: 1.1rem;
     }
     
     section {
         padding:0.5rem;
     }
-    
-    section h2 {
-        text-align: center;
-    }
-    
     
     /* Klassen */
     
