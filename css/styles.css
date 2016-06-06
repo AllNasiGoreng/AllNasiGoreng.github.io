@@ -103,10 +103,6 @@
         padding:1rem 0;
     }
     
-    p{
-        text-align: right;
-    }
-
     /*Feedback elemente*/
 
     fieldset {
@@ -119,11 +115,7 @@
         font-weight: inherit;
         margin: inherit
     }
-    
-    legend {
-        font-weight:; 
-    }
-    
+        
     section > ol > li {
         margin:0.5rem 0;
     }
@@ -167,7 +159,11 @@
         width: 1.5rem;
         margin-right: 0.5rem;
     }
-
+    
+    .wort{
+        text-align: right;
+    }
+    
     .veggie {
         width: 1.3rem;
     }
