@@ -49,11 +49,15 @@
     }
 
     footer {
+        background-color: #FFEAE9;
         font-size: 0.75rem;
-        background-color: #ffcccc;
         padding: 0.5rem;
         padding-left: 0.75rem;
     }   
+    
+    footer h3 {
+        font-weight: 300;
+    }
 
     h1 {
         font-size: 4rem;
@@ -99,8 +103,8 @@
     summary {
         cursor: pointer;
         font-weight: 700;
-        display:block;
-        padding:1rem 0;
+        display: block;
+        padding: 1rem 0;
     }
     
     /*Feedback elemente*/
@@ -108,12 +112,22 @@
     fieldset {
         background-color:#FFEAE9;
         margin-bottom: 0.5rem;
+        border:none;
     }
     
     input {
         font-size: inherit;
         font-weight: inherit;
         margin: inherit
+    }
+    
+    input:focus {
+        border-color:aliceblue;
+    }
+    
+    legend {
+        padding-top: 2.4rem;
+        font-weight: 700;
     }
         
     section > ol > li {
@@ -193,19 +207,23 @@
         position: relative;
     }
     
-    details {
-        margin:0.25rem;
-        border: #FFEAE9 dotted 0.2rem;
-        padding: 0rem 1rem;
-    }
-    
     footer {
         margin-top: 19rem;
+        background-color:#D8776F;
+        color:#fff;
+    }
+    
+    footer a {
+        color:#FFEAE9;
+    }
+    
+    footer a:hover, footer h3 {
+        color:#fff;
     }
     
     footer, nav {
         position: absolute;
-        width:100%
+        width:100%;
     }
     
     nav {
@@ -223,11 +241,6 @@
         margin: 0;
         text-align: center;
         width: 100%;
-    }
-    
-    summary {
-        font-weight: 700;
-        display:block;
     }
     
     /* Klassen */
