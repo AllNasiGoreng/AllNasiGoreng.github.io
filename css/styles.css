@@ -321,7 +321,7 @@
     
     /* Klassen */
     
-    .download, .img-right, .notMobile, header > img {
+    .download, .notMobile, header > img {
         display: none;
     }
 
