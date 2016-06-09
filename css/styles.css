@@ -272,6 +272,10 @@
         width: 2.25rem;
     }
     
+    .higherNav {
+        bottom:-11rem;
+    }
+    
     .img-right {
         display:none;
     }
