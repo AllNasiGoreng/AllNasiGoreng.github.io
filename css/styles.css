@@ -272,7 +272,7 @@
         bottom:-11rem;
     }
     
-    .img-right {
+    .img-right, .notInSmall {
         display:none;
     }
     
