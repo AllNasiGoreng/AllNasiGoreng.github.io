@@ -317,7 +317,7 @@
     
     /* Klassen */
     
-    .download, .img-right, header > img {
+    .download, .img-right, .notMobile, header > img {
         display: none;
     }
 
