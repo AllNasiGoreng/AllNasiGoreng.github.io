@@ -225,6 +225,7 @@
         background-color:#D8776F;
         color:#fff;
         padding: 0.5rem;
+        padding-top: 0rem;
     }
     
     footer a {
@@ -314,6 +315,7 @@
     section {
         padding:0.5rem;
     }
+}
     
     /* Klassen */
     
