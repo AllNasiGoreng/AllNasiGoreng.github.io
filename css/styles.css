@@ -40,16 +40,18 @@
     }
 
     a {
-        color: #AA423A;
         text-decoration: none;
     }
-
-    a:hover{
+    
+    a, input[type="submit"] {
+        color: #AA423A;
+    }
+    
+    a:hover, input[type="submit"]:hover{
         color: #D8776F;
     }
 
     footer {
-        background-color: #FFEAE9;
         font-size: 0.75rem;
         padding: 0.5rem;
         padding-left: 0.75rem;
@@ -57,6 +59,10 @@
     
     footer h3 {
         font-weight: 300;
+    }
+    
+    footer, fieldset, input[type="submit"], nav > ul > li > a {
+        background-color: #FFEAE9;
     }
 
     h1 {
@@ -88,7 +94,6 @@
     }
 
     nav > ul > li > a {
-        background-color: #FFEAE9;
         display:block;
         margin: 0 0.1rem;
         padding: 1.2rem;
@@ -110,7 +115,6 @@
     /*Feedback elemente*/
 
     fieldset {
-        background-color:#FFEAE9;
         border:0;
     }
     
@@ -127,9 +131,7 @@
     }
     
     input[type="submit"] {
-        background-color:#FFEAE9;
         border:solid 0.1rem #fff;
-        color:#AA423A;
         display:block;
         margin:1rem auto;
         padding: 1.2rem;
@@ -139,7 +141,6 @@
     
     input[type="submit"]:hover {
         cursor:pointer;
-        color:#D8776F; 
     }
     
     legend {
@@ -216,18 +217,17 @@
     
     footer {
         margin-top: 19rem;
-        background-color:#D8776F;
-        color:#fff;
+        background-color: #D8776F;
         padding: 0.5rem;
         padding-top: 0rem;
     }
     
-    footer a {
-        color:#FFEAE9;
+    footer, footer a:hover, footer h3 {
+        color: #fff;
     }
     
-    footer a:hover, footer h3 {
-        color:#fff;
+    footer a {
+        color: #FFEAE9;
     }
     
     footer, nav {
@@ -256,7 +256,7 @@
     
     .download {
         display:block;
-        margin:0;
+        margin: 0;
     }
     
     .fleisch {
