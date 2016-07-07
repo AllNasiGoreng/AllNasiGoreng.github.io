@@ -1,120 +1,134 @@
 //Spiel, nach dem Tutorial auf http://www.lostdecadegames.com/how-to-make-a-simple-html5-canvas-game/
+//VORBEREITEN: funktionen, canvas, context, points, pointText, player, food
+"use strict";
 
 window.onload = function () {
-
-    //VORBEREITEN: funktionen, canvas, context, points, pointText, player, food
-
-    var canvas = document.getElementsByTagName("canvas"),
+    var canvas = document.getElementById("c"),
         ctx = canvas.getContext("2d"),
 
         breite = canvas.width,
         hoehe = canvas.height,
 
-        points = 0, //zählt punktestand
+        points = 0; //zählt punktestand
 
-        player = { //unbeweglich
+    function getRandomX() {
+        return Math.floor(Math.random() * (breite - (breite / 5)));
+    }
+
+    function getRandomY() {
+        return Math.floor(Math.random() * (hoehe - (hoehe / 5)));
+    }
+
+    var player = { //unbeweglich
             x: breite / 2.5,
-            y: hoehe / 1.5
+            y: hoehe / 1.65
         },
 
         food = { //bewegt sich wenn angeklickt und muss gefangen werden
             x: getRandomX(),
-            y: getRandomY(),
-            speed: 50
-        };
-    
-    function getRandomX() {
-        Math.floor(Math.random() * breite);
-    }
+            y: getRandomY()
+        },
 
-    function getRandomY() {
-        Math.floor(Math.random() * hoehe);
-    }
-    // IMAGES
+        // IMAGES
 
-    //Hintergrund
-    var backgroundReady = false,
-        backgroundImage = new Image();
-    
-    backgroundImage.onload = function () {
-        backgroundReady = true;
-    };
-    
-    backgroundImage.src = "gameAssets/background.png";
-
-    //Player
-    var playerReady = false,
+        //Player
+        playerReady = false,
         playerImage = new Image();
-    
+
     playerImage.onload = function () {
         playerReady = true;
     };
-    
+
     playerImage.src = "gameAssets/player.png";
 
     //Food
     var foodReady = false,
         foodImage = new Image();
-    
+
     foodImage.onload = function () {
         foodReady = true;
     };
-    
+
     foodImage.src = "gameAssets/food.png";
 
     //USER INPUT VERWERTEN: onmousedown - onmouseup
 
-    var mousedown = {};
+    /*
+        var mousedown = {};
 
-    food.addEventListener("mousedown", function () {
+        foodImage.onclick = function () {
+            console.log("clicked");
+        };
+        
+    foodImage.onmousedown = function () {
         mousedown.down = true;
-    }, false);
+        window.console.log("down");
+    };
 
-    food.addEventListener("mouseup", function () {
+    foodImage.onmouseup = function () {
         delete mousedown.down;
-    }, false);
+        window.console.log("up");
+    };
+    */
 
     //START
 
     var start = function () { //foodanfangsposition setzen
-        food.x = getRandomX();
-        food.y = getRandomY();
-    };
+            food.x = getRandomX();
+            food.y = getRandomY();
+        },
 
-    //AKTUALISIEREN
+        //AKTUALISIEREN
 
-    var update = function () {
-        if (mousedown.down) {
+        update = function () {
             //Update Points
             points += 1;
 
             //Update Position of Food
             food.x = getRandomX();
             food.y = getRandomY();
-        }
-    };
 
-    //RENDERN
-    var render = function () {
-        //background, player, food
-        if (backgroundReady) {
-            ctx.drawImage(backgroundImage, 0, 0);
-        }
+        },
 
-        if (playerReady) {
-            ctx.drawImage(playerImage, player.x, player.y);
-        }
+        //RENDERN
+        render = function () {
+            //clear
 
-        if (foodReady) {
-            ctx.drawImage(foodImage, food.x, food.y);
-        }
+            ctx.clearRect(0, 0, breite, hoehe);
 
-        //points
-        ctx.fillStyle = "#fff";
-        ctx.font = "20px Roboto";
-        ctx.textAlign = "left";
-        ctx.textBaseline = "top";
-        ctx.fillText("Happyness: " + points);
-    };
+            //player, food
+
+
+            if (playerReady) {
+                ctx.drawImage(playerImage, player.x, player.y);
+            }
+
+            if (foodReady) {
+                ctx.drawImage(foodImage, food.x, food.y);
+            }
+
+            //points
+            ctx.fillStyle = "#fff";
+            ctx.font = "16px Roboto";
+            ctx.textAlign = "left";
+            ctx.textBaseline = "top";
+            ctx.fillText("Happyness: " + points, 10, 10);
+        },
+
+        //GAME LOOP
+        main = function () {
+            window.onclick = update;
+            render();
+
+            //redo
+            window.requestAnimationFrame(main);
+        },
+
+        //Browser support
+        w = window;
+    window.requestAnimationFrame = w.requestAnimationFrame || w.webkitRequestAnimationFrame || w.msRequestAnimationFrame || w.mozRequestAnimationFrame;
+
+    start();
+    main();
 
 };
