@@ -51,26 +51,6 @@ window.onload = function () {
 
     foodImage.src = "gameAssets/food.png";
 
-    //USER INPUT VERWERTEN: onmousedown - onmouseup
-
-    /*
-        var mousedown = {};
-
-        foodImage.onclick = function () {
-            console.log("clicked");
-        };
-        
-    foodImage.onmousedown = function () {
-        mousedown.down = true;
-        window.console.log("down");
-    };
-
-    foodImage.onmouseup = function () {
-        delete mousedown.down;
-        window.console.log("up");
-    };
-    */
-
     //START
 
     var start = function () { //foodanfangsposition setzen
@@ -80,7 +60,7 @@ window.onload = function () {
 
         //AKTUALISIEREN
 
-        update = function () {
+        update = function (evt) {
             //Update Points
             points += 1;
 
@@ -109,7 +89,7 @@ window.onload = function () {
 
             //points
             ctx.fillStyle = "#fff";
-            ctx.font = "16px Roboto";
+            ctx.font = "12pt Roboto";
             ctx.textAlign = "left";
             ctx.textBaseline = "top";
             ctx.fillText("Happyness: " + points, 10, 10);
@@ -117,7 +97,9 @@ window.onload = function () {
 
         //GAME LOOP
         main = function () {
-            window.onclick = update;
+            window.onclick = function () {
+                update(event)
+            };
             render();
 
             //redo
