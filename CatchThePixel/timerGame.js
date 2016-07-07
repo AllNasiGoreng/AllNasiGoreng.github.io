@@ -1,16 +1,13 @@
 window.onload = function () {
 
-    var intervallID = null;
-    var playMe = document.getElementById("playMe");
-    var points = 0;
-    var pText = document.getElementsByTagName("h2")[0];
-    var pH = 280;
-    var pW = 480;
-    
-    var x = 240;
-    var y = 140;
-    var left = x + "px";
-    var top = y + "px";
+    var intervallID = null,
+        playMe = document.getElementById("playMe"),
+        points = 0,
+        pText = document.getElementsByTagName("h2")[0],
+        x = 240,
+        y = 140,
+        left = x + "px",
+        top = y + "px";
     playMe.style.left = left;
     playMe.style.top = top;
 
@@ -18,34 +15,24 @@ window.onload = function () {
         pText.innerHTML = "Points: " + points;
     }
 
-    playMe.addEventListener("click", startPlay, false);
+    playMe.addEventListener("mouseover", startPlay, false);
 
     function startPlay() {
         if (intervallID === null) {
             intervallID = setInterval(function () {
-                var left = x + "px";
-                var top = y + "px";
+                left = x + "px";
+                top = y + "px";
 
-                if(x > 0 && x <= pW && y > 0 && y <= pH) {
-                    x = Math.random() * pW;
-                    y = Math.random() * pH;
-                }
-                /*
-                if(x < 0) { x = x + 20 }
-                if(y < 0) { y = y + 20 }
-                if(x > pW) { x = x - 20 }
-                if(y > pH) { y = y - 20 }*/
-                
+                x = Math.random() * 480;
+                y = Math.random() * 280;
 
                 playMe.style.left = left;
                 playMe.style.top = top;
             }, 650);
         } else {
-            //clearInterval(intervallID);
-            //intervallID = null;
-            points ++;
+            points += 1;
             updatePoints();
-            
+
         }
     }
 };
