@@ -1,116 +1,45 @@
-//Spiel, nach dem Tutorial auf http://www.lostdecadegames.com/how-to-make-a-simple-html5-canvas-game/
-//VORBEREITEN: funktionen, canvas, context, points, pointText, player, food
-"use strict";
-
 window.onload = function () {
-    var canvas = document.getElementById("c"),
-        ctx = canvas.getContext("2d"),
 
-        breite = canvas.width,
-        hoehe = canvas.height,
+    var intervallID = null,
+        instructions = document.getElementById("instructions"),
+        food = document.getElementById("food"),
+        points = 0,
+        pText = document.getElementById("punkte"),
+        x = 240,
+        y = 140,
+        left = x + "px",
+        top = y + "px";
+    
+    food.style.left = left;
+    food.style.top = top;
+    
+    //react to mobile??
+    instructions.innerHTML = "Bewege den Mauszeiger über das Nasi Goreng, um es einzusammeln."
 
-        points = 0; //zählt punktestand
-
-    function getRandomX() {
-        return Math.floor(Math.random() * (breite - (breite / 5)));
+    function updatePoints() {
+        pText.innerHTML = "Punkte: " + points;
     }
 
-    function getRandomY() {
-        return Math.floor(Math.random() * (hoehe - (hoehe / 5)));
-    }
+    food.addEventListener("mouseover", startPlay, false);
 
-    var player = { //unbeweglich
-            x: breite / 2.5,
-            y: hoehe / 1.65
-        },
+    function startPlay() {
+        if (intervallID === null) {
+            intervallID = setInterval(function () {
+                //animation
+                
+                left = x + "px";
+                top = y + "px";
 
-        food = { //bewegt sich wenn angeklickt und muss gefangen werden
-            x: getRandomX(),
-            y: getRandomY()
-        },
+                x = Math.random() * 480;
+                y = Math.random() * 280;
 
-        // IMAGES
-
-        //Player
-        playerReady = false,
-        playerImage = new Image();
-
-    playerImage.onload = function () {
-        playerReady = true;
-    };
-
-    playerImage.src = "gameAssets/player.png";
-
-    //Food
-    var foodReady = false,
-        foodImage = new Image();
-
-    foodImage.onload = function () {
-        foodReady = true;
-    };
-
-    foodImage.src = "gameAssets/food.png";
-
-    //START
-
-    var start = function () { //foodanfangsposition setzen
-            food.x = getRandomX();
-            food.y = getRandomY();
-        },
-
-        //AKTUALISIEREN
-
-        update = function (evt) {
-            //Update Points
+                food.style.left = left;
+                food.style.top = top;
+            }, 650);
+        } else {
             points += 1;
+            updatePoints();
 
-            //Update Position of Food
-            food.x = getRandomX();
-            food.y = getRandomY();
-
-        },
-
-        //RENDERN
-        render = function () {
-            //clear
-
-            ctx.clearRect(0, 0, breite, hoehe);
-
-            //player, food
-
-
-            if (playerReady) {
-                ctx.drawImage(playerImage, player.x, player.y);
-            }
-
-            if (foodReady) {
-                ctx.drawImage(foodImage, food.x, food.y);
-            }
-
-            //points
-            ctx.fillStyle = "#fff";
-            ctx.font = "12pt Roboto";
-            ctx.textAlign = "left";
-            ctx.textBaseline = "top";
-            ctx.fillText("Happyness: " + points, 10, 10);
-        },
-
-        //GAME LOOP
-        main = function () {
-            window.onclick = function () {
-                update(event)
-            };
-            render();
-
-            //redo
-            window.requestAnimationFrame(main);
-        },
-
-        //Browser support
-        w = window;
-    window.requestAnimationFrame = w.requestAnimationFrame || w.webkitRequestAnimationFrame || w.msRequestAnimationFrame || w.mozRequestAnimationFrame;
-
-    start();
-    main();
-
+        }
+    }
 };

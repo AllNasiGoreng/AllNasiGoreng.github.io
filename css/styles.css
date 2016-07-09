@@ -15,13 +15,10 @@
  */
 
 @media all {
-    
     /* Elemente */
-    
     * {
         box-sizing: border-box;
     }
-
     body {
         background-color: #fff;
         background-image: url(../images/background.png);
@@ -31,127 +28,116 @@
         font-family: 'Roboto', sans-serif;
         font-weight: 300;
         margin: 0 auto;
-        max-width: 70%;     /* Da dies das oberste Element ist, an das sich die Größen der anderen Elemente anpassen, wird hier % statt rem benötigt. */
+        max-width: 70%;
+        /* Da dies das oberste Element ist, an das sich die Größen der anderen Elemente anpassen, wird hier % statt rem benötigt. */
     }
-
     html {
         font-size: 1em;
-        padding:0;
+        padding: 0;
     }
-
     a {
         text-decoration: none;
     }
-    
-    a, input[type="submit"] {
+    a,
+    input[type="submit"] {
         color: #AA423A;
     }
-    
-    a:hover, input[type="submit"]:hover{
+    a:hover,
+    input[type="submit"]:hover {
         color: #D8776F;
     }
-
     footer {
         font-size: 0.75rem;
         padding: 0.5rem;
         padding-left: 0.75rem;
-    }   
-    
+    }
     footer h3 {
         font-weight: 300;
     }
-    
-    footer, fieldset, input[type="submit"], nav > ul > li > a {
+    footer,
+    fieldset,
+    input[type="submit"],
+    nav> ul> li> a {
         background-color: #FFEAE9;
     }
-
     h1 {
         font-size: 4rem;
         text-align: center;
     }
-
-    h1, h2, h3, h4, h5, h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         color: #3e3e3e;
         font-weight: 700;
     }
-
-    header > h2 {
+    header> h2 {
         text-align: center;
     }
-
-    header > img {
+    header> img {
         display: block;
         margin: 2rem auto;
         max-width: 100rem;
     }
-
-    nav > ul {
+    nav> ul {
         display: flex;
         justify-content: center;
         list-style: none;
         margin: 3.2rem 0;
-        padding:0;
+        padding: 0;
     }
-
-    nav > ul > li > a {
-        display:block;
+    nav> ul> li> a {
+        display: block;
         margin: 0 0.1rem;
         padding: 1.2rem;
         text-align: center;
         width: 8rem;
     }
-
-    nav > ul > li > a:hover, input[type="submit"]:hover{
+    nav> ul> li> a:hover,
+    input[type="submit"]:hover {
         background-color: transparent;
     }
-    
     summary {
         cursor: pointer;
         font-weight: 700;
         display: block;
         padding: 1rem 0;
     }
-    
     /*Feedback elemente*/
-
     fieldset {
-        border:0;
+        border: 0;
     }
-    
     input {
         font-size: inherit;
         font-weight: inherit;
         margin: 0.1rem;
     }
-    
-    input:focus, textarea:focus {
+    input:focus,
+    textarea:focus {
         border-color: #fff;
-        border-style:solid;
+        border-style: solid;
         outline-color: #fff;
     }
-    
     input[type="submit"] {
-        border:solid 0.1rem #fff;
-        display:block;
-        margin:1rem auto;
+        border: solid 0.1rem #fff;
+        display: block;
+        margin: 1rem auto;
         padding: 1.2rem;
         text-align: center;
         width: 10rem;
     }
-    
     input[type="submit"]:hover {
-        cursor:pointer;
+        cursor: pointer;
     }
-    
     legend {
         padding-top: 2.4rem;
         font-weight: 700;
     }
-        
-    section > ol > li {
-        margin:0.5rem 0;
+    section> ol> li {
+        margin: 0.5rem 0;
     }
-
     textarea {
         width: 100%;
         height: 6.5rem;
@@ -159,58 +145,71 @@
         font-size: inherit;
         font-weight: inherit;
     }
-    
     /*GAME*/
-    
-    #c {
-        width: 100%;
-        height: 100%;
+    #playbox {
+        width: 40em;
+        height: 30em;
         margin: 0 auto;
-        border: 0.1rem dotted #e3e3e3;
-        background-color: #fff;
-        background-image: url(../gameAssets/background.png);
-        background-position: top;
+        margin-bottom: 1em;
+        position: relative;
+    }
+    
+    #playground {
+        height: 25em;
+        position: relative;
+        border: 1px dotted #ffeae9;
+        background-image: url("../gameAssets/background.png");
         background-repeat: repeat-x;
     }
-
-    /* Klassen */
     
+    #food {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 40px;
+        height: 40px;
+        background-image: url("../gameAssets/food.png");
+        background-size: 100%;
+        border-radius: 30% 30%;
+    }
+
+    #punkte {
+        color: #d8776f;
+    }
+    
+    /* Klassen */
     .breakable {
         word-break: break-all;
     }
-
     .download {
-        border:0;
-        margin-left:0.5rem;
+        border: 0;
+        margin-left: 0.5rem;
         vertical-align: middle;
-        width:100%;
+        width: 100%;
     }
-    
-    .fleisch, .veggie {
-        margin: 0 0 0 0.5rem; 
+    .fleisch,
+    .veggie {
+        margin: 0 0 0 0.5rem;
         width: 1.3rem;
     }
-
     .img-right {
-        float:right;
-        margin:0 0 2rem 1rem;
+        float: right;
+        margin: 0 0 2rem 1rem;
         max-width: 20rem;
     }
-    
     .portion {
         width: 1.5rem;
         margin-right: 0.5rem;
     }
-    
-
     /* IDs */
-    
-    #Alvin h2, #Linda h2, footer {
-        clear:both;
+    #Alvin h2,
+    #Linda h2,
+    footer {
+        clear: both;
     }
-
-    #originales_Rezept > h2, #alternatives_Rezept > h2 {
-        display:inline-block;
+    #originales_Rezept> h2,
+    #alternatives_Rezept> h2 {
+        display: inline-block;
     }
 }
 
@@ -221,117 +220,99 @@
  */
 
 @media screen and (max-width: 670px) {
-    
     /* Elemente */
-    
     body {
         position: relative;
     }
-    
     footer {
         margin-top: 19rem;
         background-color: #D8776F;
         padding: 0.5rem;
         padding-top: 0rem;
     }
-    
-    footer, footer a:hover, footer h3 {
+    footer,
+    footer a:hover,
+    footer h3 {
         color: #fff;
     }
-    
     footer a {
         color: #FFEAE9;
     }
-    
-    footer, nav {
-        position: absolute;
-        width:100%;
-    }
-    
+    footer,
     nav {
-        bottom:-19rem;
+        position: absolute;
+        width: 100%;
     }
-
-    
-    nav > ul {
+    nav {
+        bottom: -19rem;
+    }
+    nav> ul {
         flex-direction: column;
         margin: 0;
     }
-
-    nav > ul > li > a {
-        display:block;
+    nav> ul> li> a {
+        display: block;
         margin: 0;
         text-align: center;
         width: 100%;
     }
-    
     /* Klassen */
-    
     .download {
-        display:block;
+        display: block;
         margin: 0;
     }
-    
     .fleisch {
         width: 2.25rem;
     }
-    
     .higherNav {
-        bottom:-11rem;
+        bottom: -11rem;
     }
-    
-    .img-right, .notInSmall {
-        display:none;
+    .img-right,
+    .notInSmall {
+        display: none;
     }
-    
     .veggie {
         width: 1.75rem;
     }
 }
+
 
 /* ######
  * MOBILE
  * ######
  */
 
-@media screen and (max-width: 480px)  {
-    
+@media screen and (max-width: 480px) {
     /* Elemente */
-    
     body {
-        background:none;
-        max-width:99%;
+        background: none;
+        max-width: 99%;
     }
-    
     h1 {
         font-size: 2rem;
     }
-    
     h2 {
         font-size: 1.2rem;
     }
-    
-    h2, h3 {
+    h2,
+    h3 {
         text-align: center;
     }
-    
     h3 {
         font-size: 1.1rem;
     }
-    
     section {
-        padding:0.5rem;
+        padding: 0.5rem;
     }
-    
     /* Klassen */
-    
-    .download, .notMobile, header > img {
+    .download,
+    .notMobile,
+    header> img {
         display: none;
     }
-
     /* IDs */
-    
-    #originales_Rezept > h2, #alternatives_Rezept > h2 {
+    #originales_Rezept> h2,
+    #alternatives_Rezept> h2 {
         display: block;
     }
 }
