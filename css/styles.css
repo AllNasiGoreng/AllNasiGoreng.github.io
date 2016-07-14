@@ -225,7 +225,7 @@
         position: relative;
     }
     footer {
-        margin-top: 19rem;
+        margin-top: 23rem;
         background-color: #D8776F;
         padding: 0.5rem;
         padding-top: 0rem;
@@ -244,7 +244,7 @@
         width: 100%;
     }
     nav {
-        bottom: -19rem;
+        bottom: -23rem;
     }
     nav> ul {
         flex-direction: column;
