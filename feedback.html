@@ -29,25 +29,25 @@
             </nav>
             <section>
                 <h2>Sag uns deine Meinung!</h2>
-                <form id="form1">
+                <form action="index.html" method="post" id="feedback">
                     <fieldset>
                         <legend>Persönliche Daten</legend>
 
                         <label for="vorname">Vorname :</label>
-                        <input type="text" id="vorname" placeholder="Max" autocomplete="on" autofocus required />
+                        <input type="text" name="vorname" placeholder="Max" autocomplete="on" autofocus  />
                         <br>
                         <label for="nachname">Nachname :</label>
-                        <input type="text" id="nachname" placeholder="Mustermann" autocomplete="on" required />
+                        <input type="text" name="nachname" placeholder="Mustermann" autocomplete="on"  />
                         <br>
                         <label for="geburtsdatum">Geburtsdatum :</label>
-                        <input type="date" id="geburtsdatum" value="1998-01-31" required />
+                        <input type="date" name="geburtsdatum" value="1998-01-31"  />
                     </fieldset>
 
                     <fieldset>
                         <legend>Kontakt</legend>
 
                         <label for="email">Email-Adresse :</label>
-                        <input type="email" id="email" placeholder="name@beispiel.de" autocomplete="on" required />
+                        <input type="email" name="email" placeholder="name@beispiel.de" autocomplete="on"  />
                     </fieldset>
 
                     <fieldset>
@@ -63,11 +63,12 @@
                         <input type="radio" name="bewertung" id="nichtgut" value="-1" />
 
                         <br><label for="vorschlaege">Verbesserungsvorschläge :</label><br>
-                        <textarea id="vorschlaege" placeholder="..." required></textarea>
+                        <textarea name="vorschlaege" placeholder="..." ></textarea>
                     </fieldset>
 
                     <input type="submit" value="Absenden" />
                 </form>
+                <script type="text/javascript" src="scripts/feedback.js"></script>
             </section>
             <section>
                 <h2>Datenschutz</h2>
@@ -79,6 +80,5 @@
                     <li><a href="https://www.iconfinder.com/icons/383157/comments_icon" target="_blank">Comments Icon</a> von <a href="https://www.iconfinder.com/DesignRevision" target="_blank">Design Revision</a></li>
                 </ul>
             </footer>
-        <script type="text/javascript" src="scripts/feedback.js"></script>
     </body>
 </html>
