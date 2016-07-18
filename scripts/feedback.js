@@ -1,11 +1,10 @@
-//Benutzerdaten entgegen nehmen
-
- function removeElementsByClass(className){
-        elements = document.getElementsByClassName(className);
+function removeElementsByClass(className) {
+ 
+    elements = document.getElementsByClassName(className);
         while(elements.length > 0){
           elements[0].parentNode.removeChild(elements[0]);
         }
-      }    
+}    
     
       function flagError(field, prependText){
         var message = prependText + " kann nicht leer sein!";
