@@ -29,25 +29,25 @@
             </nav>
             <section>
                 <h2>Sag uns deine Meinung!</h2>
-                <form action="index.html" method="post" id="feedback">
+                <form action="index.html" method="get" name="feedback" onsubmit="return validateForm">
                     <fieldset>
                         <legend>Persönliche Daten</legend>
 
                         <label for="vorname">Vorname :</label>
-                        <input type="text" name="vorname" placeholder="Max" autocomplete="on" autofocus  />
+                        <input type="text" name="vorname" placeholder="Max" autocomplete="on" autofocus required />
                         <br>
                         <label for="nachname">Nachname :</label>
-                        <input type="text" name="nachname" placeholder="Mustermann" autocomplete="on"  />
+                        <input type="text" name="nachname" placeholder="Mustermann" autocomplete="on" required/>
                         <br>
                         <label for="geburtsdatum">Geburtsdatum :</label>
-                        <input type="date" name="geburtsdatum" value="1998-01-31"  />
+                        <input type="date" name="geburtsdatum" value="1998-01-31" />
                     </fieldset>
 
                     <fieldset>
                         <legend>Kontakt</legend>
 
                         <label for="email">Email-Adresse :</label>
-                        <input type="email" name="email" placeholder="name@beispiel.de" autocomplete="on"  />
+                        <input type="email" name="email" placeholder="name@beispiel.de" autocomplete="on" required/>
                     </fieldset>
 
                     <fieldset>
