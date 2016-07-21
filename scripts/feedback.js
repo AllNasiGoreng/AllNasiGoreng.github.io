@@ -1,61 +1,43 @@
 window.onload = function () {
     'use strict';
-    var vorname = document.forms['feedback']['vorname'].value,
-        nachname = document.forms['feedback']['nachname'].value,
-        email = document.forms['feedback']['email'].value,
-        button = document.getElementsByName("submit")[0];
+    
+    var button = document.getElementsByName("submit")[0];
 
     button.addEventListener('click', validate, false);
 
     function validate() {
+        var vorname = document.forms['feedback']['vorname'].value,
+        nachname = document.forms['feedback']['nachname'].value,
+        email = document.forms['feedback']['email'].value;
+        
         var message = "",
             atLeastOneInvalid = 0;
 
+                var containsNumbers = 0,
+            numbers = /^[0-9]+$/;
         //emptyness
-        if (vorname === "") {
-            message = message + "Gib bitte deinen Vornamen an. ";
+        if (vorname === "" || numbers.test(vorname)) {
+            console.log(vorname);
+            message = message + "Dein Vorname ist ungültig. ";
             atLeastOneInvalid = 1;
         }
-        if (nachname === "") {
-            message = message + "Gib bitte deinen Nachnamen an. ";
+        
+        if (nachname === "" || numbers.test(nachname)) {
+            console.log(nachname);
+            message = message + "Dein Nachname ist ungültig. ";
             atLeastOneInvalid = 1;
         }
+        
         if (email === "") {
+            console.log(email);
             message = message + "Gib bitte deine Emailadresse an. ";
             atLeastOneInvalid = 1;
         }
-
-        //symbols
-        //vorname nachname
-        var containsNumbers = 0;
-        for (var i = 0; i < vorname.length; i++) {
-            if(isNaN(vorname[i]) != true) {
-                containsNumbers = 1;
-                break;
-            }
-        }
-        if(containsNumbers) {
-            atLeastOneInvalid = 1;
-            message = message + "Dein Vorname ist ungültig";
-        }
-
+        
         //alert message
-        if (atLeastOneInvalid) {
+        if (atLeastOneInvalid === 1) {
             alert(message);
         }
 
     }
-
-    /*
-    function allLetter(a) {
-        var letters = /^[A-Za-z]+$/;
-        if (a.value.match(letters)) {
-            return true;
-        } else {
-            alert("Bitte keine Zahl eintippen.");
-            return false;
-        }
-    }*/
-
-
-}
+};
