@@ -57,17 +57,16 @@ window.onload = function () {
             }
         }
 
-        play();
-
         food.style.left = left;
         food.style.top = top;
+        
+        play();
 
         food.addEventListener("mouseover", play, false);
 
         food.style.visibility = "visible";
         pText.style.visibility = "visible";
         player.style.visibility = "visible";
-
     }
 
     if (window.innerWidth > 670) {
