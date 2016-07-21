@@ -40,7 +40,6 @@ window.onload = function () {
                 player.style.backgroundImage = "url('../gameAssets/player2.png')";
                 setTimeout(function () {
                     player.style.backgroundImage = "url('../gameAssets/player.png')";
-                    console.log("test");
                 }, 1000);
 
                 //update points
